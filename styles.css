@@ -1,7 +1,7 @@
 /* ---- Page background ---- */
 body {
   margin: 0;
-  background: url('CAT-IMAGE.png') no-repeat center center fixed;
+  background: url('images/CAT-IMAGE.png') no-repeat center center fixed;
   background-size: cover;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -122,4 +122,15 @@ input[type="submit"]:hover {
   align-items: center;
   margin-top:10px;
 }
+@media(max-width:768px){
+  body{
+    background: none;
+    background-color: #ccc;
+  }
+  
+  .center-container{
+    width:100%;
+    max-width:none;
+  }
 
+}
