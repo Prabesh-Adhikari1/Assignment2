@@ -1,0 +1,125 @@
+/* ---- Page background ---- */
+body {
+  margin: 0;
+  background: url('CAT-IMAGE.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ---- Header ---- */
+.header-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  font-family: cursive;
+  color: #333;
+  margin-left: 50px;
+}
+.logo{
+  max-width: 100px;
+}
+.header{
+    margin: 0;
+}
+/* ---- Centered main box ---- */
+.main-container {
+  display: flex;
+  
+  align-items: center;
+  min-height: 85vh;
+  width: 900px;
+  margin-left: 50px;;
+}
+
+/* ---- Form box ---- */
+.center-container {
+  background-color:#ffdacc;
+  border: 2px solid #d4af37;      
+  border-radius: 20px;
+  box-shadow:inset 0 4px 20px rgba(0, 0, 0, 0.3);
+  width: 70%;
+  max-width: 500px;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* ---- Section titles ---- */
+.owner-info-container .owner,
+.cat-info-container .cat {
+  border-bottom: 2px solid #d4af37;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* ---- Input styling ---- */
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+input[type="radio"]{
+    width:auto;
+    cursor:pointer;
+    display: inline block;
+    margin-right:25px;
+}
+input[type="checkbox"]{
+    width:auto;
+    cursor:pointer;
+}
+.check{
+    display: flex;
+   flex-direction:  column;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+/* ---- Labels ---- */
+label {
+  margin-right: 15px;
+  font-weight: 500;
+}
+
+/* ---- Paragraphs inside form ---- */
+p {
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+/* ---- Optional hover styling ---- */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #d4af37;
+  box-shadow: 0 0 5px rgba(212, 175, 55, 0.6);
+}
+/*...Submit part...*/
+input[type="submit"] {
+  width: 120px;
+  background-color: #d4af37; /* elegant gold */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #b7950b; /* deeper gold on hover */
+}
+
+.submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:10px;
+}
+

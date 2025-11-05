@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>Kitting</title>
+</head>
+
+<body>
+    <div class="header-container">  
+        <div class="image">
+            <img class="logo" src="images/Kitting logo.png">
+        </div>
+        <DIV><h1 class="header">Katting</h1></DIV>
+        
+     </div>
+    <div class="main-container">
+        <div class="center-container">
+            
+            <form>
+                <div class="owner-info-container">
+                    <p class="owner">Owners Information</p>
+                    <div class="input-form">
+                        <p>First name</p>
+                        <input type="text" name="firstname" id="firstname" placeholder="Type here">
+
+                        <p>Last name</p>
+                        <input type="text" name="secondname" id="secondname" placeholder="Type here">
+
+                        <p>Phone number</p>
+                        <input type="number" name="phonenumber" id="phonenumber" placeholder="Type here">
+
+                        <p>Address</p>
+                        <input type="text" name="address" id="address" placeholder="Type here">
+
+                        <p>Email</p>
+                        <input type="email" name="email" id="email" placeholder="Type here">
+
+                        <p>Password</p>
+                        <input type="password" name="password" id="password" 
+                        placeholder="Type here" required pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}"
+                        title="You should add atleast one captital letter plus number">
+
+                    </div>
+                </div>
+                <div class="cat-info-container">
+                    <p class="cat">Cat Information</p>
+                    <div class="input-form">
+                        <p>Name</p>
+                        <input type="text" name="catname" id="catname" placeholder="Type here">
+                        
+                        <p>Breed</p>
+                        <input type="text" name="catbreed" id="catbreed" placeholder="Type here">
+
+                        <p>Coat colour</p>
+                        <input type="text" name="catcolour" id="catcolour" placeholder="Type here">
+                        
+                        <p>Age(years)</p>
+                            <select name="age" required>
+                                <option value="1-3" selected>1-3</option>
+                                <option value="4-6">4-6</option>
+                                <option value="7-9">7-9</option>
+                                <option value="10-12">10-12</option>
+                                <option value="13-15">13-15</option>
+                                <option value="16-18">16-18</option>
+                                <option value="19-21">19-21</option>
+                            </select>
+
+                        <p>Gender</p>     
+                         <lable for="male">male</lable>
+                        <input type="radio" name="gender" id="male">
+                        <lable for="female">female</lable>
+                        <input type="radio" name="gender" value="female">
+                        
+
+                        <p>Bio</p>
+                        <textarea placeholder="Write about your cat" name="bio" id="bio"></textarea>
+
+                        <p>Interested in:</p>
+                        <div class="check1">
+                             <input type="checkbox" name="interest" id="lovelife">
+                             <label for="lovelife">Love life</label>
+                        </div>
+                        <div class="check">
+                            <div class="check1">
+                                <input type="checkbox" name="interest" value="meetingnewcats">
+                                <label for="meetingnewcats">Meeting new cats</label> 
+                            </div>
+                            <div class="check1">
+                                <input type="checkbox" name="interest" value="meetingnewcats">
+                                <label for="meetingnewcats">Meeting new cats</label>
+                            </div>
+                            <div class="check1">
+                                <input type="checkbox" name="interest" id="funexperience">
+                                <label for="funexperience">Fun experience</label>
+                            </div>
+                            <div class="check1">
+                                <input type="checkbox" name="interest" value="lookingforfriends">
+                                <label for="lookingforfriends">Looking for friends</label>
+                            </div>
+                        </div>
+                        <div class="submit">
+                            <input type="submit" value="Send">
+                        </div>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
