@@ -124,24 +124,68 @@ input[type="submit"]:hover {
   margin-top:10px;
 }
 
+
+
 /* -----------------------------------
-    MOBILE (≤ 375px)
+   💻 TABLETS (≤ 768px)
 ----------------------------------- */
-@media (max-width: 375px) {
+@media (max-width: 768px) {
+  body {
+    background: none;
+    background-color: #ddd;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    gap: 8px;
+  }
+
+  .logo {
+    max-width: 80px;
+  }
+
+  .header {
+    font-size: 1.8rem;
+  }
+
+  .main-container {
+    padding: 20px;
+  }
+
+  .center-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 25px;
+  }
+}
+
+/* -----------------------------------
+   📱 MOBILE (≤ 375px)
+----------------------------------- */
+@media (max-width: 376px) {
   body {
     background: none;
     background-color: #f5f5f5;
   }
 
   .header-container {
-    flex-direction: row;
+    flex-direction: row;        
     align-items: center;
+    justify-content: center;    
     margin: 10px 0;
-    font-size: 20px;
+    font-size: 15px;
+    gap: 5px;
   }
 
   .logo {
     max-width: 60px;
+  }
+
+  .header {
+    font-size: 1.6rem;
   }
 
   .main-container {
@@ -172,48 +216,32 @@ input[type="submit"]:hover {
 }
 
 /* -----------------------------------
-    TABLETS (≤ 768px)
------------------------------------ */
-@media (max-width: 768px) {
-  body {
-    background: none;
-    background-color: #ddd;
-  }
-
-  .header-container {
-    flex-direction: column;
-    align-items: center;
-    margin: 15px 0;
-  }
-
-  .main-container {
-    padding: 20px;
-  }
-
-  .center-container {
-    width: 100%;
-    max-width: 500px;
-    padding: 25px;
-  }
-}
-
-/* -----------------------------------
-   DESKTOP (≥ 1024px)
+   🖥️ DESKTOP (≥ 1024px)
 ----------------------------------- */
 @media (min-width: 1024px) {
+  .header-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 80px;
+    gap: 12px;
+  }
+
+  .logo {
+    max-width: 100px;
+  }
+
+  .header {
+    font-size: 2.5rem;
+  }
+
   .main-container {
     justify-content: flex-start;
-    padding-left: 20px;
-    margin-left: 0;
+    padding-left: 10px;
   }
-  
 
   .center-container {
     max-width: 650px;
-    padding: 40px 50px;
-  }
-
-  .header-container {
-    margin-left: 80px;
+    padding: 15px 15px;
   }
 }
