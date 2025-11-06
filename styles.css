@@ -27,7 +27,8 @@ body {
   
   align-items: center;
   min-height: 85vh;
-  width: 900px;
+  max-width: 800px;
+  width:100%;
   margin-left: 50px;;
 }
 
@@ -123,9 +124,9 @@ input[type="submit"]:hover {
   margin-top:10px;
 }
 
-/* 
+/* -----------------------------------
     MOBILE (≤ 375px)
-    */
+----------------------------------- */
 @media (max-width: 375px) {
   body {
     background: none;
@@ -133,18 +134,24 @@ input[type="submit"]:hover {
   }
 
   .header-container {
+    flex-direction: row;
+    align-items: center;
     margin: 10px 0;
     font-size: 20px;
   }
 
   .logo {
-    max-width: 80px;
+    max-width: 60px;
+  }
+
+  .main-container {
+    padding: 10px;
   }
 
   .center-container {
-    padding: 20px;
-    border-radius: 10px;
     width: 100%;
+    padding: 15px;
+    border-radius: 10px;
   }
 
   p,
@@ -164,9 +171,9 @@ input[type="submit"]:hover {
   }
 }
 
-/* 
+/* -----------------------------------
     TABLETS (≤ 768px)
-    */
+----------------------------------- */
 @media (max-width: 768px) {
   body {
     background: none;
@@ -190,14 +197,16 @@ input[type="submit"]:hover {
   }
 }
 
-/* 
-    DESKTOP (≥ 1024px)
-    */
+/* -----------------------------------
+   DESKTOP (≥ 1024px)
+----------------------------------- */
 @media (min-width: 1024px) {
   .main-container {
     justify-content: flex-start;
-    padding-left: 70px;
+    padding-left: 20px;
+    margin-left: 0;
   }
+  
 
   .center-container {
     max-width: 650px;
