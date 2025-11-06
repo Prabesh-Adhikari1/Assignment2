@@ -133,7 +133,6 @@ input[type="submit"]:hover {
   }
 
   .header-container {
-    align-items: center;
     margin: 10px 0;
     font-size: 20px;
   }
